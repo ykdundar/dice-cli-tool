@@ -17,3 +17,6 @@
 # Project executable
 clitool
 dist/
+
+# OSx
+.DS_Store

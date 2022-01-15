@@ -8,9 +8,11 @@ import (
 	"regexp"
 	"sort"
 	"strconv"
+	"time"
 )
 
 func main() {
+	rand.Seed(time.Now().UTC().UnixNano())
 	dice := flag.String("d", "d20", "The type of dice to roll. Format:dX where is an integer. Default: d20	")
 	numroll := flag.Int("n", 1, "The number of die to roll. Default: 1")
 	sum := flag.Bool("s", false, "Get the sum of all the dice rolls")
